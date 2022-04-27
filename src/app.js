@@ -8,6 +8,6 @@ app.use(cors());
 
 app.use("/api/v1", require("../routes/v1"));
 
-app.listen(8080, () => {
-  console.log("Example app listening on port 3000!");
+let listener = app.listen(8080, () => {
+  console.log(`Example app listening on port ${listener.address().port}!`);
 });
