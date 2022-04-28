@@ -2,7 +2,7 @@
   "name": "mushroom-server",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",
+  "main": "www/app.js",
   "scripts": {
     "start": "nodemon ."
   },
