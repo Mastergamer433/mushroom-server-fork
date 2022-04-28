@@ -1,0 +1,1 @@
+Add email templates for when different actions happen.
