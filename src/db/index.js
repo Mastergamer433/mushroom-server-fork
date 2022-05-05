@@ -13,14 +13,6 @@ class Database {
     const sql = `SELECT * FROM ${tableName} WHERE id = ${id}`;
     this.query(sql, callback);
   }
-  async insert(tableName, columns, values, callback) {
-    const sql = `INSERT INTO ${tableName} (${columns}) VALUES (${values})`;
-    this.query(sql, callback);
-  }
-  async update(tableName, id, columns, values, callback) {
-    const sql = `UPDATE ${tableName} SET ${columns} = ${values} WHERE id = ${id}`;
-    this.query(sql, callback);
-  }
   async delete(tableName, id, callback) {
     const sql = `DELETE FROM ${tableName} WHERE id = ${id}`;
     this.query(sql, callback);
