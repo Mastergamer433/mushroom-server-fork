@@ -1,9 +1,9 @@
-require("dotenv").config();
+const config = require('../config.json')
 
 try {
-  var transporter = require("nodemailer").createTransport(process.env.SMTP_URL);
+  var transporter = require("nodemailer").createTransport(config.smtp.url);
 } catch (error) {
-  console.log("Error Creating Transporter. Check the .env file");
+  console.log("Error Creating Transporter. Check the config.json file");
 }
 
 module.exports = {

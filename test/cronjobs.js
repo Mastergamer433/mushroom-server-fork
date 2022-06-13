@@ -1,6 +1,6 @@
-const cronjobs = require("../src/cronjobs");
+const cronjob = require("../src/cronjobs");
 
-const job1 = new cronjobs("*/1 * * * * *", () =>
+const job1 = new cronjob("*/1 * * * * *", () =>
   console.log(new Date().toString())
 );
 
