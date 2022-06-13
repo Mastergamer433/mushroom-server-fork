@@ -1,0 +1,15 @@
+{
+	"auth": {
+		"jwt": "<TOKEN>"
+	},
+	"db": {
+		"url": "<DATABASE_URL>"
+	},
+	"server": {
+		"port": 8080
+	},
+	"smtp": {
+		"url": "<URL>",
+		"fromEmail": "<EMAIL>"
+	}
+}
